@@ -5,4 +5,8 @@ scikit-learn
 catboost
 xgboost
 Flask
+python-dotenv
+mysql-connector-python
+pymysql
+mlflow
 -e .
