@@ -17,12 +17,13 @@ class DataIngestionConfig:
 
 class DataIngestion:
     def __init__(self):
-        self.ingestion_config=DataIngestionConfig()
+        self.ingestion_config = DataIngestionConfig()
 
     def initiate_data_ingestion(self):
         try:
             ##reading the data from mysql
-            df = read_sql_data()
+            # df = read_sql_data()
+            df = pd.read_csv(os.path.join("Data", "House Price India.csv"))
             logging.info("Reading mysql database complete")
 
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path),exist_ok=True)
@@ -37,11 +38,9 @@ class DataIngestion:
 
             return(
                 self.ingestion_config.train_data_path,
-                self.ingestion_config.test_data_path
-
-
+                self.ingestion_config.test_data_path,
+                self.ingestion_config.raw_data_path
             )
-
 
         except Exception as e:
             raise CustomException(e,sys)
