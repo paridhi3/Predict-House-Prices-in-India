@@ -9,5 +9,6 @@ python-dotenv
 mysql-connector-python
 pymysql
 mlflow
+dagshub
 dvc
 -e .

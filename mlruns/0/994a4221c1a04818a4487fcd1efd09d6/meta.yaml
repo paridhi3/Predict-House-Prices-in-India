@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/PARIDHI/Desktop/ALL-ML-PROJECTS/india-housing/mlruns/0/994a4221c1a04818a4487fcd1efd09d6/artifacts
+end_time: 1721310766858
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 994a4221c1a04818a4487fcd1efd09d6
+run_name: upbeat-penguin-574
+run_uuid: 994a4221c1a04818a4487fcd1efd09d6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1721310756930
+status: 3
+tags: []
+user_id: root
